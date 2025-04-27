@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  button, input, textarea {
+    border: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+  }
+body {
+    margin: 0;
+    padding: 0;
+    font-family:  'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: background 1s ease;
+    animation: colorCycle 10s infinite;
+    text-align: center;
+  }
+
+h2 {
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    color: #5d3a00; 
+    padding: 12px 24px;
+    text-align: center;
+    margin: 80px auto 20px; 
+    letter-spacing: 2px;
+}
+
+h4 {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    color: #5d3a00;
+    margin-bottom: 70px; 
+}
+
+  
+@keyframes colorCycle {
+    0% { background-color: #f5d0ce; } 
+    25% { background-color: #d9f4c6; } 
+    50% { background-color: #b2dbf3; } 
+    75% { background-color: #fdf7df; } 
+    100% { background-color: #d5c8f7; } 
+    75% { background-color: #f7d2cf; } 
+}
+
+.menu-btn {
+    padding: 12px 25px;
+    font-size: 15px;
+    background-color: #f6f4f0;
+    color: #5d3a00;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0px;
+    box-shadow: 0 4px 8px rgba(140, 166, 121, 0.4);
+    transition: all 0.3s ease;
+  }
+  
+.menu-btn:hover {
+    background-color: #fff3c4;
+    transform: scale(1.05);
+  }
+  
+.button-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  
+  #result {
+    margin-top: 40px; /* tambahin jarak ke atas */
+    font-size: 18px;
+    color: #5d3a00;
+  }

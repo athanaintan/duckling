@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="suggest.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
+   <link rel="icon" href="banana.png" type="image/png">
+</head>
+<body>
+    <h2>makan apa hari ini?🍽️</h2>
+    <h4>choose ur meal!</h4>
+    
+    <div class="button-box">
+      <button class="menu-btn" onclick="chooseFood('ramen')" >ramen 🍜</button>
+      <button class="menu-btn" onclick="chooseFood('chicken hainan')">chicken hainan 🐔</button>
+      <button class="menu-btn" onclick="chooseFood('sushi')">sushi 🍣</button>
+      <button class="menu-btn" onclick="chooseFood('pizza')">pizza 🍕</button>
+      <button class="menu-btn" onclick="window.location.href='bingung.html'">i don't know what to eat</button>
+    </div>
+    
+         
+     <p id="result" class= "choose"></p>
+     <div en="scriptBox" class="script-box"></div>
+    
+     <script>
+       function chooseFood(food) 
+       {
+       console.log("Yang dipilih:", food); 
+       if (food === "i dont know what to eat") 
+       {document.getElementById("result").textContent = "Let's find out together!";} 
+       else {document.getElementById("result").textContent = "I want to eat " + food + "!";}
+       }
+     </script>
+     
+     <div id="scriptBox" class="script-box"></div>
+     <script>
+        function showChoice(food, scriptCode) 
+        {
+         document.getElementById("result").textContent = "You picked: " + food;
+        }
+     </script>
+     <div style="text-align: center; margin-top: 40px;">
+       <a href="index.html">
+        <button style=
+        "padding: 10px 20px; 
+        background-color: #6b8650; 
+        border: none; 
+        border-radius: 10px; 
+        font-weight: bold; 
+        color: #fff8f3; 
+        cursor: pointer;">⬅️ Back to Home
+        </button>
+      </a>
+    </div>
+
+    </body>
+    </html>
+    

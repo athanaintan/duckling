@@ -1,0 +1,69 @@
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #d5ce82; 
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+  }
+  h2 {
+    margin-top: 20px;
+    font-size: 40px;
+    color: #5d3a00;
+  }
+  #scoreBoard {
+    background-color: #f09a43; /* warna orange */
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* penuh satu layar */
+    box-sizing: border-box;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f2e6d3;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  
+  #game-area {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 200px); /* biar game area mulai setelah scoreboard */
+    border: 1px solid #ccc;
+    background-color: #f3e9cf; 
+    overflow: hidden;
+  } 
+  #startButton {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #f09a43;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Membuat tombol berada di tengah */
+    z-index: 100;
+    transition: opacity 0.3s ease;
+  } 
+  .banana {
+    font-size: 50px; /* Pisang besar! */
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+    animation: fall 5s linear forwards;
+  }
+  @keyframes fall {
+    from {
+      top: -60px;}
+      to {
+      top: 100vh;
+    }
+  }
+  
+  
